@@ -1,0 +1,898 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tutorial_island"
+	group: "1E3C4B5FFAE48A39"
+	icon: "minecraft:book"
+	id: "595FB8F19517515D"
+	images: [{
+		color: 8026746
+		height: 15.0d
+		image: "watut:textures/particles/book.png"
+		rotation: 0.0d
+		width: 15.0d
+		x: 3.0d
+		y: 2.5d
+	}]
+	order_index: 2
+	progression_mode: "linear"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{cte2.tutorial_island.quests0.description0}"
+				""
+				"{cte2.tutorial_island.quests0.description1}"
+				""
+				"{cte2.tutorial_island.quests0.description2}"
+				""
+				"{cte2.tutorial_island.quests0.description3}"
+				""
+				"{cte2.tutorial_island.quests0.description4}"
+			]
+			icon: "minecraft:writable_book"
+			id: "3D534456B5577886"
+			rewards: [
+				{
+					id: "7DFEB55A2DB58520"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "5AB7A1F6D0355A24"
+					item: "minecraft:bread"
+					title: "{cte2.tutorial_island.quests0.rewards1.title}"
+					type: "item"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests0.subtitle}"
+			tasks: [{
+				id: "180625C52DCD0D10"
+				title: "{cte2.tutorial_island.quests0.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests0.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["624D8CD0A4A6668B"]
+			description: [
+				"{cte2.tutorial_island.quests1.description0}"
+				""
+				"{cte2.tutorial_island.quests1.description1}"
+				""
+				"{cte2.tutorial_island.quests1.description2}"
+				""
+				"{cte2.tutorial_island.quests1.description3}"
+				""
+				"{cte2.tutorial_island.quests1.description4}"
+			]
+			icon: "ftbquests:book"
+			id: "1D1A11176642F3B7"
+			rewards: [{
+				id: "4F1CC1F2C7AE009A"
+				item: "lightmanscurrency:coin_iron"
+				title: "{cte2.tutorial_island.quests1.rewards0.title}"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests1.subtitle}"
+			tasks: [{
+				id: "3A866C3E60A31A44"
+				title: "{cte2.tutorial_island.quests1.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests1.title}"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04849611F904771C"]
+			description: [
+				"{cte2.tutorial_island.quests2.description0}"
+				""
+				"{cte2.tutorial_island.quests2.description1}"
+				""
+				"{image:cte2:textures/character_stats.png width:160 height:128 align:1}"
+				""
+				"{cte2.tutorial_island.quests2.description2}"
+			]
+			icon: "minecraft:book"
+			id: "370B16D21A1C8C2A"
+			rewards: [
+				{
+					id: "664780A2223E3339"
+					item: "mmorpg:potions/reset_points_stat"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 400"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "7C5DF203CB53154E"
+					silent: true
+					title: "{cte2.tutorial_island.quests2.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests2.subtitle}"
+			tasks: [{
+				id: "275C2856C38D5C69"
+				title: "{cte2.tutorial_island.quests2.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests2.title}"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["624D8CD0A4A6668B"]
+			description: [
+				"{cte2.tutorial_island.quests3.description0}"
+				""
+				"{image:cte2:textures/talent_tree.png width:160 height:115 align:1}"
+				""
+				"{cte2.tutorial_island.quests3.description1}"
+			]
+			icon: "minecraft:book"
+			id: "006A7A18576A0F08"
+			rewards: [
+				{
+					id: "36F1D405C86DBF10"
+					item: "mmorpg:potions/reset_points_talent"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 200"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "629C3438B2710D55"
+					silent: true
+					title: "{cte2.tutorial_island.quests3.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests3.subtitle}"
+			tasks: [{
+				id: "5B3F0FB233CF32C3"
+				title: "{cte2.tutorial_island.quests3.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests3.title}"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53A5ECD28E7E16E1"]
+			description: [
+				"{image:cte2:textures/gui.png width:160 height:105 align:1}"
+				""
+				"{cte2.tutorial_island.quests4.description0}"
+				""
+				"{cte2.tutorial_island.quests4.description1}"
+				""
+				"{cte2.tutorial_island.quests4.description2}"
+				""
+				"{cte2.tutorial_island.quests4.description3}"
+				""
+				"{cte2.tutorial_island.quests4.description4}"
+			]
+			icon: "minecraft:book"
+			id: "1AF90A44925D68C5"
+			rewards: [
+				{
+					count: 4
+					id: "5563AEC5EB461E06"
+					item: "lightmanscurrency:coin_iron"
+					title: "{cte2.tutorial_island.quests4.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 200"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "5B378C415A27364D"
+					silent: true
+					title: "{cte2.tutorial_island.quests4.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests4.subtitle}"
+			tasks: [{
+				id: "5DC2DF96AFC3ABA0"
+				title: "{cte2.tutorial_island.quests4.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests4.title}"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C1568D71346C427"]
+			description: [
+				"{cte2.tutorial_island.quests5.description0}"
+				""
+				"{cte2.tutorial_island.quests5.description1}"
+				""
+				"{cte2.tutorial_island.quests5.description2}"
+			]
+			icon: "minecraft:book"
+			id: "12072C5B0DBA1D9B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6963584B2FA192B2"
+					table_id: 405550839613976496L
+					type: "choice"
+				}
+				{
+					count: 64
+					id: "44781414EAFB0B9C"
+					item: "minecraft:arrow"
+					title: "{cte2.tutorial_island.quests5.rewards1.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 200"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "15B7385E59ADC279"
+					silent: true
+					title: "{cte2.tutorial_island.quests5.rewards2.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests5.subtitle}"
+			tasks: [{
+				id: "097EE1C544FD3AF4"
+				title: "{cte2.tutorial_island.quests5.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests5.title}"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3059FF2D6DB1AC9F"]
+			description: [
+				"{cte2.tutorial_island.quests6.description0}"
+				""
+				"{cte2.tutorial_island.quests6.description1}"
+				""
+				"{cte2.tutorial_island.quests6.description2}"
+			]
+			icon: "minecraft:book"
+			id: "20EDF9937A6D81A1"
+			rewards: [
+				{
+					id: "6A86E09079D5B3BA"
+					item: "minecraft:zombie_spawn_egg"
+					title: "{cte2.tutorial_island.quests6.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 200"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "6940AA27E88A207E"
+					silent: true
+					title: "{cte2.tutorial_island.quests6.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests6.subtitle}"
+			tasks: [{
+				id: "606C55FCC98A2001"
+				title: "{cte2.tutorial_island.quests6.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests6.title}"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A39A9996E8D63F4"]
+			description: [
+				"{cte2.tutorial_island.quests7.description0}"
+				""
+				"{image:cte2:textures/skill_gem.png width:140 height:105 align:1}"
+				""
+				"{cte2.tutorial_island.quests7.description1}"
+				""
+				"{cte2.tutorial_island.quests7.description2}"
+				""
+				"{cte2.tutorial_island.quests7.description3}"
+			]
+			icon: "minecraft:book"
+			id: "7337041DDD0E11D3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "21AB060E5E613149"
+					table_id: 981191123936022223L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20DA685775EFA28C"
+					table_id: 5889716173591028936L
+					type: "choice"
+				}
+				{
+					id: "195315FED862A4E8"
+					item: "mmorpg:potions/reset_points_spell"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 200"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "398BFCC200235F28"
+					silent: true
+					title: "{cte2.tutorial_island.quests7.rewards3.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests7.subtitle}"
+			tasks: [{
+				id: "4EF7436540486635"
+				title: "{cte2.tutorial_island.quests7.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests7.title}"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["546A9D082F1A2160"]
+			description: [
+				"{cte2.tutorial_island.quests8.description0}"
+				""
+				"{cte2.tutorial_island.quests8.description1}"
+				""
+				"{cte2.tutorial_island.quests8.description2}"
+			]
+			icon: "minecraft:book"
+			id: "406DD6CC68DD0B4E"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 700"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "77C71BA0310D6B4E"
+				silent: true
+				title: "{cte2.tutorial_island.quests8.rewards0.title}"
+				type: "command"
+			}]
+			subtitle: "{cte2.tutorial_island.quests8.subtitle}"
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: "minecraft:zombie_head"
+				id: "2F2A06908ED6990C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "{cte2.tutorial_island.quests8.title}"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["22EAD61501470768"]
+			description: [
+				"{cte2.tutorial_island.quests9.description0}"
+				""
+				"{cte2.tutorial_island.quests9.description1}"
+				""
+				"{cte2.tutorial_island.quests9.description2}"
+				""
+				"{cte2.tutorial_island.quests9.description3}"
+				""
+				"{cte2.tutorial_island.quests9.description4}"
+				""
+				"{cte2.tutorial_island.quests9.description5}"
+			]
+			icon: "minecraft:book"
+			id: "54BA0BEACC7B61A2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33DD236B137E6363"
+					table_id: 8672695084726290362L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F7B479EF7F2BB9D"
+					table_id: 7074154712315855923L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A8BA1A93CDDED83"
+					table_id: 8493327020853369464L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E8F008489E7FDFE"
+					table_id: 5741053327200068691L
+					type: "choice"
+				}
+				{
+					id: "384C68C310AE983F"
+					item: "minecraft:skeleton_spawn_egg"
+					title: "{cte2.tutorial_island.quests9.rewards4.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 250"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "7E96CB626445E192"
+					silent: true
+					title: "{cte2.tutorial_island.quests9.rewards5.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests9.subtitle}"
+			tasks: [{
+				id: "7D1FDD79C2C6EF7D"
+				title: "{cte2.tutorial_island.quests9.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests9.title}"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1C852F78D386B77E"]
+			description: [
+				"{cte2.tutorial_island.quests10.description0}"
+				""
+				"{cte2.tutorial_island.quests10.description1}"
+				""
+				"{cte2.tutorial_island.quests10.description2}"
+			]
+			icon: "minecraft:writable_book"
+			id: "099D93D60FF64BE0"
+			rewards: [
+				{
+					count: 15
+					id: "2E4FC5CDAE464337"
+					item: "lightmanscurrency:coin_iron"
+					title: "{cte2.tutorial_island.quests10.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "7D26E832B7B2439D"
+					silent: true
+					title: "{cte2.tutorial_island.quests10.rewards1.title}"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3FE743F3AB064CDF"
+					table_id: 405550839613976496L
+					type: "choice"
+				}
+			]
+			subtitle: "{cte2.tutorial_island.quests10.subtitle}"
+			tasks: [{
+				id: "294D37F1F67390C7"
+				title: "{cte2.tutorial_island.quests10.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests10.title}"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7B22B96E95E5DA09"]
+			description: [
+				"{cte2.tutorial_island.quests11.description0}"
+				""
+				"{cte2.tutorial_island.quests11.description1}"
+				""
+				"{cte2.tutorial_island.quests11.description2}"
+				""
+				"{cte2.tutorial_island.quests11.description3}"
+			]
+			icon: "ftbquests:book"
+			id: "22026AE816FAC2BB"
+			rewards: [
+				{
+					id: "08D2178930CE73F7"
+					item: "mmorpg:gems/azurite/1"
+					title: "{cte2.tutorial_island.quests11.rewards0.title}"
+					type: "item"
+				}
+				{
+					id: "607A2C6FC4083A61"
+					item: "mmorpg:gems/topaz/1"
+					title: "{cte2.tutorial_island.quests11.rewards1.title}"
+					type: "item"
+				}
+				{
+					id: "56222C22F2F7B88D"
+					item: "mmorpg:runes/ano"
+					title: "{cte2.tutorial_island.quests11.rewards2.title}"
+					type: "item"
+				}
+				{
+					id: "0B3412AC4BA1A250"
+					item: "mmorpg:currency/extract_gem"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests11.subtitle}"
+			tasks: [{
+				id: "71BD6E6966D0A390"
+				title: "{cte2.tutorial_island.quests11.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests11.title}"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7B22B96E95E5DA09"]
+			description: [
+				"{cte2.tutorial_island.quests12.description0}"
+				""
+				"{cte2.tutorial_island.quests12.description1}"
+			]
+			icon: "minecraft:book"
+			id: "33D9078638BEA35D"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 250"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "6232F898FB05E1E0"
+				silent: true
+				title: "{cte2.tutorial_island.quests12.rewards0.title}"
+				type: "command"
+			}]
+			subtitle: "{cte2.tutorial_island.quests12.subtitle}"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				icon: "minecraft:skeleton_skull"
+				id: "02371085F3948192"
+				type: "kill"
+				value: 1L
+			}]
+			title: "{cte2.tutorial_island.quests12.title}"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["30403B3DE1E47F33"]
+			description: [
+				"{cte2.tutorial_island.quests13.description0}"
+				""
+				"{cte2.tutorial_island.quests13.description1}"
+				""
+				"{cte2.tutorial_island.quests13.description2}"
+				""
+				"{cte2.tutorial_island.quests13.description3}"
+				""
+				"{cte2.tutorial_island.quests13.description4}"
+				""
+				"{cte2.tutorial_island.quests13.description5}"
+			]
+			icon: "minecraft:book"
+			id: "0066E463DA9AFFB0"
+			rewards: [{
+				id: "0E0FD52B433E04F6"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:wallet_gold"
+					tag: {
+						AutoConvert: 1b
+					}
+				}
+				title: "{cte2.tutorial_island.quests13.rewards0.title}"
+				type: "item"
+			}]
+			subtitle: "{cte2.tutorial_island.quests13.subtitle}"
+			tasks: [{
+				id: "52B4A9036418C6BD"
+				title: "{cte2.tutorial_island.quests13.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests13.title}"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3059FF2D6DB1AC9F"]
+			description: [
+				"{cte2.tutorial_island.quests14.description0}"
+				""
+				"{cte2.tutorial_island.quests14.description1}"
+				""
+				"{cte2.tutorial_island.quests14.description2}"
+				""
+				"{cte2.tutorial_island.quests14.description3}"
+			]
+			icon: "ftbquests:book"
+			id: "18A71325F022A3D8"
+			rewards: [
+				{
+					id: "6ADE3E849D16A8F1"
+					item: {
+						Count: 1
+						id: "aquaculture:wooden_fillet_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "{cte2.tutorial_island.quests14.rewards0.title}"
+					type: "item"
+				}
+				{
+					id: "5CF5642C6AD8A5AD"
+					item: {
+						Count: 1
+						id: "mmorpg:stat_soul"
+						tag: {
+							CustomModelData: 15
+							mmorpg_stat_soul: "{\"tier\":0,\"slot\":\"dagger\",\"rar\":\"common\",\"fam\":\"NONE\",\"uniq\":\"\",\"can_sal\":true}"
+						}
+					}
+					title: "{cte2.tutorial_island.quests14.rewards1.title}"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests14.subtitle}"
+			tasks: [{
+				id: "2063C9DA2C6265DD"
+				title: "{cte2.tutorial_island.quests14.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests14.title}"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7B22B96E95E5DA09"]
+			description: [
+				"{cte2.tutorial_island.quests15.description0}"
+				""
+				"{cte2.tutorial_island.quests15.description1}"
+				""
+				"{cte2.tutorial_island.quests15.description2}"
+				""
+				"{cte2.tutorial_island.quests15.description3}"
+			]
+			icon: "ftbquests:book"
+			id: "4F548E59B6252880"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0474CE43B5E9C602"
+				table_id: 7401807202655080641L
+				type: "choice"
+			}]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests15.subtitle}"
+			tasks: [{
+				id: "6BC5626E776EA716"
+				title: "{cte2.tutorial_island.quests15.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests15.title}"
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1895A7A94BE0A4B6"]
+			description: [
+				"{cte2.tutorial_island.quests16.description0}"
+				""
+				"{cte2.tutorial_island.quests16.description1}"
+			]
+			icon: "ftbquests:book"
+			id: "5985024E25EB1000"
+			rewards: [{
+				count: 8
+				id: "1361F172A8236025"
+				item: "waystones:warp_scroll"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests16.subtitle}"
+			tasks: [{
+				id: "7831AA6B0A89F554"
+				title: "{cte2.tutorial_island.quests16.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests16.title}"
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["48075B2F138A9C2C"]
+			description: [
+				"{cte2.tutorial_island.quests17.description0}"
+				""
+				"{cte2.tutorial_island.quests17.description1}"
+			]
+			icon: "ftbquests:book"
+			id: "1D15EE41145E2111"
+			rewards: [{
+				id: "469A3D655CD3659D"
+				item: {
+					Count: 1
+					id: "minecraft:golden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests17.subtitle}"
+			tasks: [{
+				id: "485A05E75B6B9B45"
+				title: "{cte2.tutorial_island.quests17.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests17.title}"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1895A7A94BE0A4B6"]
+			description: ["{cte2.tutorial_island.quests18.description0}"]
+			icon: "minecraft:book"
+			id: "6971D362555CA366"
+			rewards: [{
+				id: "2BAD53FB363D9F23"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "{cte2.tutorial_island.quests18.subtitle}"
+			tasks: [{
+				id: "4C0EDD4479B6C88A"
+				title: "{cte2.tutorial_island.quests18.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests18.title}"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1C852F78D386B77E"]
+			description: [
+				"{cte2.tutorial_island.quests19.description0}"
+				""
+				"{cte2.tutorial_island.quests19.description1}"
+				""
+				"{cte2.tutorial_island.quests19.description2}"
+			]
+			icon: "ftbquests:book"
+			id: "54F783A0EB155668"
+			rewards: [{
+				id: "6223F0F70406619D"
+				item: "mmorpg:master_bag"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests19.subtitle}"
+			tasks: [{
+				id: "68D91F92F8313DEA"
+				title: "{cte2.tutorial_island.quests19.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests19.title}"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["04849611F904771C"]
+			description: [
+				"{cte2.tutorial_island.quests20.description0}"
+				""
+				"{cte2.tutorial_island.quests20.description1}"
+			]
+			icon: "ftbquests:book"
+			id: "30BA5F8FFCA03066"
+			rewards: [{
+				id: "34322BA0E4E73261"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests20.subtitle}"
+			tasks: [{
+				id: "26F0C37FCA563955"
+				title: "{cte2.tutorial_island.quests20.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests20.title}"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1895A7A94BE0A4B6"]
+			description: [
+				"{cte2.tutorial_island.quests21.description0}"
+				""
+				"{cte2.tutorial_island.quests21.description1}"
+				""
+				"{cte2.tutorial_island.quests21.description2}"
+			]
+			icon: "ftbquests:book"
+			id: "687AEF686C2F8B1A"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 50"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "7D748C86BEDB0159"
+				silent: true
+				title: "{cte2.tutorial_island.quests21.rewards0.title}"
+				type: "command"
+			}]
+			shape: "circle"
+			subtitle: "{cte2.tutorial_island.quests21.subtitle}"
+			tasks: [{
+				id: "6D866AE5A5656F43"
+				title: "{cte2.tutorial_island.quests21.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests21.title}"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["30403B3DE1E47F33"]
+			description: [
+				"{cte2.tutorial_island.quests22.description0}"
+				"{cte2.tutorial_island.quests22.description1}"
+				"{cte2.tutorial_island.quests22.description2}"
+				"{cte2.tutorial_island.quests22.description3}"
+				""
+				"{cte2.tutorial_island.quests22.description4}"
+				""
+				"{cte2.tutorial_island.quests22.description5}"
+				""
+				"{cte2.tutorial_island.quests22.description6}"
+				""
+				"{cte2.tutorial_island.quests22.description7}"
+			]
+			icon: "simplehats:goggles"
+			id: "4F7CD1D2BAEC8A76"
+			rewards: [{
+				id: "218789CF542A24D0"
+				item: "simplehats:goggles"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "3AA22863A49AD07A"
+				title: "{cte2.tutorial_island.quests22.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.tutorial_island.quests22.title}"
+			x: 0.0d
+			y: -1.0d
+		}
+	]
+	title: "{cte2.tutorial_island.title}"
+}

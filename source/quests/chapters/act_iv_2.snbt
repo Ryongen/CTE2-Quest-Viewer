@@ -1,0 +1,1570 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act_iv_2"
+	group: "1E3C4B5FFAE48A39"
+	icon: {
+		Count: 1
+		id: "blue_skies:bluebright_spear"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "6B10730757092117"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"09CFBF8766DA4706"
+				"30B56119C4EA7398"
+			]
+			description: [
+				"{cte2.act_iv_2.quests0.description0}"
+				""
+				"{cte2.act_iv_2.quests0.description1}"
+			]
+			id: "76F0B6F3F0D0DFE0"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 19000"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "7E2B993887B3059C"
+				silent: true
+				title: "{cte2.act_iv_2.quests0.rewards0.title}"
+				type: "command"
+			}]
+			shape: "rsquare"
+			subtitle: "{cte2.act_iv_2.quests0.subtitle}"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_end"
+				criterion: ""
+				id: "7AA2F2102C310100"
+				type: "advancement"
+			}]
+			title: "{cte2.act_iv_2.quests0.title}"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0998037F5701A2D7"]
+			description: [
+				"{cte2.act_iv_2.quests1.description0}"
+				""
+				"{cte2.act_iv_2.quests1.description1}"
+				""
+				"{cte2.act_iv_2.quests1.description2}"
+			]
+			id: "09358A7E60A05D1F"
+			rewards: [
+				{
+					count: 6
+					id: "0F373A03F7818AE4"
+					item: "lightmanscurrency:coin_iron"
+					title: "{cte2.act_iv_2.quests1.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 10000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "12C53B39A94B2C16"
+					silent: true
+					title: "{cte2.act_iv_2.quests1.rewards1.title}"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "{cte2.act_iv_2.quests1.subtitle}"
+			tasks: [{
+				id: "3C26FC222517CC2B"
+				item: {
+					Count: 1
+					id: "blue_skies:zeal_lighter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{cte2.act_iv_2.quests1.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01B3ED0D457F7A7C"]
+			description: [
+				"{cte2.act_iv_2.quests2.description0}"
+				""
+				"{cte2.act_iv_2.quests2.description1}"
+				""
+				"{cte2.act_iv_2.quests2.description2}"
+			]
+			id: "0728C1C8CC5B806B"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 12500"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "7B1A607EE3D375BF"
+				silent: true
+				title: "{cte2.act_iv_2.quests2.rewards0.title}"
+				type: "command"
+			}]
+			subtitle: "{cte2.act_iv_2.quests2.subtitle}"
+			tasks: [
+				{
+					count: 10L
+					id: "5264E401D42FF9F5"
+					item: "blue_skies:lunar_stonebrick"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2F627D8DAB4D2168"
+					item: "blue_skies:turquoise_stonebrick"
+					type: "item"
+				}
+			]
+			title: "{cte2.act_iv_2.quests2.title}"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10ABAF144ABC131E"]
+			description: ["{cte2.act_iv_2.quests3.description0}"]
+			id: "4D6FEE19C9B3CA68"
+			rewards: [
+				{
+					id: "4F48CB1275FF56B4"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/rare_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"rare\",\"lvl\":40,\"id\":\"gear\",\"key\":\"\"}"
+						}
+					}
+					title: "{cte2.act_iv_2.quests3.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 14500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "2AE34D4001A4FC0D"
+					silent: true
+					title: "{cte2.act_iv_2.quests3.rewards1.title}"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "{cte2.act_iv_2.quests3.subtitle}"
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				icon: "blue_skies:everbright_portal"
+				id: "5375D1BE446E2AB0"
+				title: "{cte2.act_iv_2.quests3.tasks0.title}"
+				type: "dimension"
+			}]
+			title: "{cte2.act_iv_2.quests3.title}"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10ABAF144ABC131E"]
+			description: ["{cte2.act_iv_2.quests4.description0}"]
+			id: "103B82617F949516"
+			rewards: [
+				{
+					id: "3F0A85F9BD91C75A"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/rare_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"rare\",\"lvl\":40,\"id\":\"gear\",\"key\":\"\"}"
+						}
+					}
+					title: "{cte2.act_iv_2.quests4.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 14500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "681B1048AC74FD6D"
+					silent: true
+					title: "{cte2.act_iv_2.quests4.rewards1.title}"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "{cte2.act_iv_2.quests4.subtitle}"
+			tasks: [{
+				dimension: "blue_skies:everdawn"
+				icon: "blue_skies:everdawn_portal"
+				id: "73D8EA8C31C69708"
+				title: "{cte2.act_iv_2.quests4.tasks0.title}"
+				type: "dimension"
+			}]
+			title: "{cte2.act_iv_2.quests4.title}"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["01B3ED0D457F7A7C"]
+			description: ["{cte2.act_iv_2.quests5.description0}"]
+			id: "45E01A43E685AA24"
+			rewards: [
+				{
+					count: 3
+					id: "57E1BEFA0E6E61BC"
+					item: "mmorpg:stone/3"
+					title: "{cte2.act_iv_2.quests5.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 13500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "08394678D19D8322"
+					silent: true
+					title: "{cte2.act_iv_2.quests5.rewards1.title}"
+					type: "command"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "{cte2.act_iv_2.quests5.subtitle}"
+			tasks: [{
+				id: "03E65B8CECF38AEA"
+				item: "blue_skies:blue_journal"
+				type: "item"
+			}]
+			title: "{cte2.act_iv_2.quests5.title}"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44D0530C2718FC69"]
+			description: [
+				"{cte2.act_iv_2.quests6.description0}"
+				""
+				"{cte2.act_iv_2.quests6.description1}"
+				""
+				"{cte2.act_iv_2.quests6.description2}"
+				""
+				"{cte2.act_iv_2.quests6.description3}"
+				""
+				"{cte2.act_iv_2.quests6.description4}"
+				""
+				"{cte2.act_iv_2.quests6.description5}"
+				"{cte2.act_iv_2.quests6.description6}"
+				"{cte2.act_iv_2.quests6.description7}"
+			]
+			icon: {
+				Count: 1
+				id: "mmorpg:weapon/staff/iron"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D9607F73F49D0B1"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 20000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "75A0C27DA8C9041F"
+					silent: true
+					title: "{cte2.act_iv_2.quests6.rewards0.title}"
+					type: "command"
+				}
+				{
+					id: "02B9E20C6C23EDA6"
+					item: {
+						Count: 1
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:basic/enderman"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "{cte2.act_iv_2.quests6.subtitle}"
+			tasks: [
+				{
+					icon: "blue_skies:bright_blinding_keystone"
+					id: "712B4453FFE8AF3B"
+					structure: "blue_skies:everbright_blinding_dungeon"
+					title: "{cte2.act_iv_2.quests6.tasks0.title}"
+					type: "structure"
+				}
+				{
+					entity: "blue_skies:summoner"
+					icon: {
+						Count: 1
+						id: "mmorpg:weapon/staff/iron"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "2A56171FCF24C993"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "{cte2.act_iv_2.quests6.title}"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["260297A19CCA9015"]
+			description: [
+				"{cte2.act_iv_2.quests7.description0}"
+				""
+				"{cte2.act_iv_2.quests7.description1}"
+				""
+				"{cte2.act_iv_2.quests7.description2}"
+				""
+				"{cte2.act_iv_2.quests7.description3}"
+				""
+				"{cte2.act_iv_2.quests7.description4}"
+				""
+				"{cte2.act_iv_2.quests7.description5}"
+				"{cte2.act_iv_2.quests7.description6}"
+				"{cte2.act_iv_2.quests7.description7}"
+				"{cte2.act_iv_2.quests7.description8}"
+			]
+			icon: {
+				Count: 1
+				id: "twilightforest:greater_potion_flask"
+				tag: { }
+			}
+			id: "4D434491F1534D35"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 20000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "07D0AFA316141705"
+					silent: true
+					title: "{cte2.act_iv_2.quests7.rewards0.title}"
+					type: "command"
+				}
+				{
+					id: "422CBD71448C4198"
+					item: {
+						Count: 1
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:basic/witch"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "{cte2.act_iv_2.quests7.subtitle}"
+			tasks: [
+				{
+					icon: "blue_skies:dawn_blinding_keystone"
+					id: "25194FCB8660A559"
+					structure: "blue_skies:everdawn_blinding_dungeon"
+					title: "{cte2.act_iv_2.quests7.tasks0.title}"
+					type: "structure"
+				}
+				{
+					entity: "blue_skies:alchemist"
+					icon: {
+						Count: 1
+						id: "twilightforest:greater_potion_flask"
+						tag: { }
+					}
+					id: "55846F2347E4D804"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "{cte2.act_iv_2.quests7.title}"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F455D8A504B112D"]
+			description: [
+				"{cte2.act_iv_2.quests8.description0}"
+				""
+				"{cte2.act_iv_2.quests8.description1}"
+				""
+				"{cte2.act_iv_2.quests8.description2}"
+				""
+				"{cte2.act_iv_2.quests8.description3}"
+				""
+				"{cte2.act_iv_2.quests8.description4}"
+				""
+				"{cte2.act_iv_2.quests8.description5}"
+				""
+				"{cte2.act_iv_2.quests8.description6}"
+				"{cte2.act_iv_2.quests8.description7}"
+				"{cte2.act_iv_2.quests8.description8}"
+				"{cte2.act_iv_2.quests8.description9}"
+				"{cte2.act_iv_2.quests8.description10}"
+			]
+			icon: "blue_skies:nature_key"
+			id: "21B4875D318C4A27"
+			rewards: [
+				{
+					id: "28A8479AB98D5BB1"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/rare_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"rare\",\"lvl\":50,\"id\":\"gear\",\"key\":\"\"}"
+						}
+					}
+					title: "{cte2.act_iv_2.quests8.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 25000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "686AB700898834FA"
+					silent: true
+					title: "{cte2.act_iv_2.quests8.rewards1.title}"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					icon: "ftb_ph:talent"
+					id: "6A83C4F48B67F0E1"
+					title: "{cte2.act_iv_2.quests8.rewards2.title}"
+					type: "custom"
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "{cte2.act_iv_2.quests8.subtitle}"
+			tasks: [
+				{
+					icon: "blue_skies:nature_key"
+					id: "46E4F7C5937A61B4"
+					structure: "blue_skies:nature_dungeon"
+					title: "{cte2.act_iv_2.quests8.tasks0.title}"
+					type: "structure"
+				}
+				{
+					entity: "blue_skies:starlit_crusher"
+					icon: {
+						Count: 1
+						id: "blue_skies:starlit_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "25F62D269CA626E0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "{cte2.act_iv_2.quests8.title}"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["63DA191A8533F1AE"]
+			description: [
+				"{cte2.act_iv_2.quests9.description0}"
+				""
+				"{cte2.act_iv_2.quests9.description1}"
+				""
+				"{cte2.act_iv_2.quests9.description2}"
+				""
+				"{cte2.act_iv_2.quests9.description3}"
+				""
+				"{cte2.act_iv_2.quests9.description4}"
+				""
+				"{cte2.act_iv_2.quests9.description5}"
+				""
+				"{cte2.act_iv_2.quests9.description6}"
+				"{cte2.act_iv_2.quests9.description7}"
+				"{cte2.act_iv_2.quests9.description8}"
+				"{cte2.act_iv_2.quests9.description9}"
+			]
+			icon: "blue_skies:poison_key"
+			id: "7B6FB62D8F6996D2"
+			rewards: [
+				{
+					id: "4E50EB0DD5EDA5CF"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/rare_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"rare\",\"lvl\":50,\"id\":\"gear\",\"key\":\"\"}"
+						}
+					}
+					title: "{cte2.act_iv_2.quests9.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 25000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "2246909F9455A8AF"
+					silent: true
+					title: "{cte2.act_iv_2.quests9.rewards1.title}"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					icon: "ftb_ph:talent"
+					id: "09FF3A4168633091"
+					title: "{cte2.act_iv_2.quests9.rewards2.title}"
+					type: "custom"
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "{cte2.act_iv_2.quests9.subtitle}"
+			tasks: [
+				{
+					icon: "blue_skies:poison_key"
+					id: "27909577D00942E7"
+					structure: "blue_skies:poison_dungeon"
+					title: "{cte2.act_iv_2.quests9.tasks0.title}"
+					type: "structure"
+				}
+				{
+					entity: "blue_skies:arachnarch"
+					icon: "aquamirae:anglers_fang"
+					id: "0EDF13A2831E8413"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "{cte2.act_iv_2.quests9.title}"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"260297A19CCA9015"
+				"44D0530C2718FC69"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{cte2.act_iv_2.quests10.description0}"
+				""
+				"{cte2.act_iv_2.quests10.description1}"
+			]
+			icon: "minecraft:campfire"
+			id: "697316F1F38C237A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "56093A342EE71D19"
+					table_id: 1620634734402786827L
+					type: "choice"
+				}
+				{
+					count: 2
+					id: "51207A7110B72C77"
+					item: "mmorpg:material/farming/2"
+					title: "{cte2.act_iv_2.quests10.rewards1.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 18000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "30B699A5BDA55905"
+					silent: true
+					title: "{cte2.act_iv_2.quests10.rewards2.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests10.subtitle}"
+			tasks: [
+				{
+					icon: "minecraft:soul_campfire"
+					id: "5DDD819F762A8F0F"
+					structure: "blue_skies:village_brightlands"
+					title: "{cte2.act_iv_2.quests10.tasks0.title}"
+					type: "structure"
+				}
+				{
+					icon: "minecraft:campfire"
+					id: "6D271F3554E48494"
+					structure: "blue_skies:village_crystal_dunes"
+					title: "{cte2.act_iv_2.quests10.tasks1.title}"
+					type: "structure"
+				}
+			]
+			title: "{cte2.act_iv_2.quests10.title}"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B4E23F4CD32950F"]
+			description: [
+				"{cte2.act_iv_2.quests11.description0}"
+				""
+				"{cte2.act_iv_2.quests11.description1}"
+			]
+			id: "7AD0E997C3D2F0D3"
+			rewards: [
+				{
+					id: "51CF8056E0199D39"
+					item: "lightmanscurrency:coin_diamond"
+					title: "{cte2.act_iv_2.quests11.rewards0.title}"
+					type: "item"
+				}
+				{
+					id: "299707916F6382E7"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/common_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"common\",\"lvl\":40,\"id\":\"rune\",\"key\":\"\"}"
+						}
+					}
+					title: "{cte2.act_iv_2.quests11.rewards1.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 19250"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "3B08B354E57A2955"
+					silent: true
+					title: "{cte2.act_iv_2.quests11.rewards2.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests11.subtitle}"
+			tasks: [{
+				id: "2721BA9E90A1D031"
+				item: "blue_skies:bag_of_spoils"
+				type: "item"
+			}]
+			title: "{cte2.act_iv_2.quests11.title}"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F455D8A504B112D"
+				"63DA191A8533F1AE"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{cte2.act_iv_2.quests12.description0}"
+				""
+				"{cte2.act_iv_2.quests12.description1}"
+			]
+			id: "7F6C986DCD39ACE1"
+			rewards: [
+				{
+					id: "79B4AC2F2F0E5A15"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/common_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"common\",\"lvl\":40,\"id\":\"gem\",\"key\":\"\"}"
+						}
+					}
+					title: "{cte2.act_iv_2.quests12.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 17000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "07DDB9B50362F9EA"
+					silent: true
+					title: "{cte2.act_iv_2.quests12.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests12.subtitle}"
+			tasks: [
+				{
+					count: 16L
+					id: "7E76BE83CF0E02E5"
+					item: "blue_skies:pyrope_gem"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5EF934DC77C4AAA2"
+					item: "blue_skies:aquite"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1314151670A066D6"
+					item: "blue_skies:diopside_gem"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5972AAAECF8E9203"
+					item: "blue_skies:charoite"
+					type: "item"
+				}
+			]
+			title: "{cte2.act_iv_2.quests12.title}"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E4735F6982A43ED"]
+			description: ["{cte2.act_iv_2.quests13.description0}"]
+			id: "01C5B6CDA8EAB8D1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3E534AB8A24CE8D4"
+					table_id: 6715256251723704267L
+					type: "choice"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 20000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "295D91C41354CEAC"
+					silent: true
+					title: "{cte2.act_iv_2.quests13.rewards1.title}"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					icon: "ftb_ph:talent"
+					id: "705D97A8612FFB70"
+					title: "{cte2.act_iv_2.quests13.rewards2.title}"
+					type: "custom"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests13.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "67D1B9BC79A8B863"
+					item: "blue_skies:falsite_ingot"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "64128B9717CC278A"
+					item: "blue_skies:horizonite_ingot"
+					type: "item"
+				}
+			]
+			title: "{cte2.act_iv_2.quests13.title}"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["44D0530C2718FC69"]
+			description: [
+				"{cte2.act_iv_2.quests14.description0}"
+				""
+				"{cte2.act_iv_2.quests14.description1}"
+			]
+			id: "324B8ED7BFC2B0B5"
+			rewards: [
+				{
+					count: 4
+					id: "4B82ED29AC7A428E"
+					item: "mmorpg:material/mining/2"
+					title: "{cte2.act_iv_2.quests14.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 13000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "47BCAA3FDB6488C8"
+					silent: true
+					title: "{cte2.act_iv_2.quests14.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests14.subtitle}"
+			tasks: [{
+				id: "2ED7F9D491D5BDB9"
+				item: {
+					Count: 1
+					id: "blue_skies:bluebright_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{cte2.act_iv_2.quests14.title}"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["260297A19CCA9015"]
+			description: [
+				"{cte2.act_iv_2.quests15.description0}"
+				""
+				"{cte2.act_iv_2.quests15.description1}"
+			]
+			id: "713D5351E1470883"
+			rewards: [
+				{
+					count: 4
+					id: "11142575DD3C2C77"
+					item: "mmorpg:material/mining/2"
+					title: "{cte2.act_iv_2.quests15.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 13000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "136005349C3EC349"
+					silent: true
+					title: "{cte2.act_iv_2.quests15.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests15.subtitle}"
+			tasks: [{
+				id: "20D87B8EE383D582"
+				item: {
+					Count: 1
+					id: "blue_skies:lunar_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{cte2.act_iv_2.quests15.title}"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44D0530C2718FC69"]
+			description: [
+				"{cte2.act_iv_2.quests16.description0}"
+				""
+				"{cte2.act_iv_2.quests16.description1}"
+				""
+				"{cte2.act_iv_2.quests16.description2}"
+			]
+			icon: "blue_skies:frose"
+			id: "443C37E0AD498FD3"
+			rewards: [
+				{
+					count: 4
+					id: "002A346D14B2BEF2"
+					item: {
+						Count: 1
+						id: "mmorpg:potion/health/5"
+						tag: {
+							level: 1
+							tier: 0
+						}
+					}
+					title: "{cte2.act_iv_2.quests16.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 15500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "65D3C0E399B82F56"
+					silent: true
+					title: "{cte2.act_iv_2.quests16.rewards1.title}"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					icon: "ftb_ph:talent"
+					id: "1169E0C6E0034DCE"
+					title: "{cte2.act_iv_2.quests16.rewards2.title}"
+					type: "custom"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests16.subtitle}"
+			tasks: [
+				{
+					entity: "blue_skies:armored_frost_spirit"
+					icon: {
+						Count: 1
+						id: "undergarden:froststeel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "48DA78958D67758A"
+					type: "kill"
+					value: 16L
+				}
+				{
+					entity: "blue_skies:crynocerous"
+					icon: "simplehats:unicornhorn"
+					id: "3B0BD1B7A80EE7B8"
+					type: "kill"
+					value: 16L
+				}
+			]
+			title: "{cte2.act_iv_2.quests16.title}"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["260297A19CCA9015"]
+			description: [
+				"{cte2.act_iv_2.quests17.description0}"
+				""
+				"{cte2.act_iv_2.quests17.description1}"
+				""
+				"{cte2.act_iv_2.quests17.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "aquaculture:worm"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7325F690E60657E5"
+			rewards: [
+				{
+					count: 4
+					id: "7987C6D67A662A81"
+					item: {
+						Count: 1
+						id: "mmorpg:potion/health/5"
+						tag: {
+							level: 1
+							tier: 0
+						}
+					}
+					title: "{cte2.act_iv_2.quests17.rewards0.title}"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 15500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "1BCA902BA1C15B8F"
+					silent: true
+					title: "{cte2.act_iv_2.quests17.rewards1.title}"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					icon: "ftb_ph:talent"
+					id: "6DCE3AACCBA3BBBD"
+					title: "{cte2.act_iv_2.quests17.rewards2.title}"
+					type: "custom"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests17.subtitle}"
+			tasks: [
+				{
+					entity: "blue_skies:emberback"
+					icon: "minecraft:fire_coral_fan"
+					id: "6A7E27CA338B3984"
+					type: "kill"
+					value: 16L
+				}
+				{
+					entity: "blue_skies:infested_swarmer"
+					icon: "botania:mycelium_seeds"
+					id: "5E56F744D449F2BF"
+					type: "kill"
+					value: 16L
+				}
+			]
+			title: "{cte2.act_iv_2.quests17.title}"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5145DB1D393B6681"
+				"517A65DD1CDCA89F"
+				"08D0C45FA283D50A"
+				"5B4E23F4CD32950F"
+				"467EF949DCDD7863"
+				"5F455D8A504B112D"
+				"07B675A69ECAD9D0"
+				"6954FEF58C12CA7F"
+				"44D0530C2718FC69"
+				"1B6034E8571F3AFA"
+				"61FABF4C4DB118C8"
+				"74FCB46359C566CA"
+				"1FC3745ADFF992F2"
+				"09CFBF8766DA4706"
+				"75454F0A3C4C3596"
+				"1E4735F6982A43ED"
+				"260297A19CCA9015"
+				"01B3ED0D457F7A7C"
+				"10ABAF144ABC131E"
+				"63DA191A8533F1AE"
+				"30B56119C4EA7398"
+				"6EE535C73A769B4D"
+				"450D4FC0C8C994AD"
+				"2C0463FD0D5CBF91"
+				"1AD4461B780DE1AF"
+				"598F0B2047B2ED63"
+				"1A18C9F2B0E6E37B"
+				"54D98C5CCDE624EF"
+			]
+			description: ["{cte2.act_iv_2.quests18.description0}"]
+			hide_dependency_lines: true
+			icon: "simplehats:questbook"
+			id: "52A25FE44E8BE867"
+			rewards: [
+				{
+					id: "0BD709441936C572"
+					item: "simplehats:questbook"
+					type: "item"
+				}
+				{
+					id: "4F346089C21434A1"
+					item: "lightmanscurrency:coin_emerald"
+					title: "{cte2.act_iv_2.quests18.rewards1.title}"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "{cte2.act_iv_2.quests18.subtitle}"
+			tasks: [{
+				id: "597F90BA40EB1630"
+				title: "{cte2.act_iv_2.quests18.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.act_iv_2.quests18.title}"
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["10ABAF144ABC131E"]
+			description: [
+				"{cte2.act_iv_2.quests19.description0}"
+				""
+				"{cte2.act_iv_2.quests19.description1}"
+			]
+			icon: "minecraft:paper"
+			id: "22575E5B1C27480A"
+			rewards: [
+				{
+					id: "38A17957189AF25F"
+					item: "minecraft:saddle"
+					title: "{cte2.act_iv_2.quests19.rewards0.title}"
+					type: "item"
+				}
+				{
+					id: "7E6C2BC06E1320DD"
+					item: "blue_skies:camel_saddle"
+					title: "{cte2.act_iv_2.quests19.rewards1.title}"
+					type: "item"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests19.subtitle}"
+			tasks: [{
+				id: "01CFE10D6D694539"
+				title: "{cte2.act_iv_2.quests19.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.act_iv_2.quests19.title}"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5F455D8A504B112D"]
+			description: [
+				"{cte2.act_iv_2.quests20.description0}"
+				""
+				"{cte2.act_iv_2.quests20.description1}"
+			]
+			id: "7B325F37944291AD"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 15500"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "7C921DB5861EA2DA"
+				silent: true
+				title: "{cte2.act_iv_2.quests20.rewards0.title}"
+				type: "command"
+			}]
+			subtitle: "{cte2.act_iv_2.quests20.subtitle}"
+			tasks: [{
+				advancement: "blue_skies:everbright/craft_snowcap_oven"
+				criterion: ""
+				id: "4C0FF872EBA803B0"
+				type: "advancement"
+			}]
+			title: "{cte2.act_iv_2.quests20.title}"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["63DA191A8533F1AE"]
+			description: ["{cte2.act_iv_2.quests21.description0}"]
+			id: "0AC7CD746BAF50AA"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 15500"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "68DCFE6494E73902"
+				silent: true
+				title: "{cte2.act_iv_2.quests21.rewards0.title}"
+				type: "command"
+			}]
+			subtitle: "{cte2.act_iv_2.quests21.subtitle}"
+			tasks: [{
+				advancement: "blue_skies:everdawn/craft_horizonite_forge"
+				criterion: ""
+				id: "403A14182AA5AB92"
+				type: "advancement"
+			}]
+			title: "{cte2.act_iv_2.quests21.title}"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["75454F0A3C4C3596"]
+			description: [
+				"{cte2.act_iv_2.quests22.description0}"
+				""
+				"{cte2.act_iv_2.quests22.description1}"
+				""
+				"{cte2.act_iv_2.quests22.description2}"
+			]
+			icon: "minecraft:paper"
+			id: "5817F9665F247359"
+			rewards: [{
+				id: "293C92E6FB844000"
+				item: {
+					Count: 1
+					id: "mmorpg:omen"
+					tag: {
+						Damage: 0
+						mmorpg_omen: "{\"id\":\"blood\",\"lvl\":50,\"rar\":\"common\",\"rarities\":{\"NORMAL\":1,\"UNIQUE\":2,\"RUNED\":2},\"slot_req\":[{\"slot\":\"helmet\",\"rtype\":\"NORMAL\"}],\"aff\":[{\"p\":15,\"id\":\"jewel_corrupt_critical_damage\",\"rar\":\"common\",\"ty\":\"jewel_corruption\"},{\"p\":15,\"id\":\"gear_corruptphysical_resist\",\"rar\":\"common\",\"ty\":\"chaos_stat\"}]}"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{cte2.act_iv_2.quests22.subtitle}"
+			tasks: [{
+				id: "0CF077BCEA08545B"
+				title: "{cte2.act_iv_2.quests22.tasks0.title}"
+				type: "checkmark"
+			}]
+			title: "{cte2.act_iv_2.quests22.title}"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10ABAF144ABC131E"]
+			description: ["{cte2.act_iv_2.quests23.description0}"]
+			id: "1885F540B01E01E3"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 15500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "1EE5DD9BBCC8B526"
+					silent: true
+					title: "{cte2.act_iv_2.quests23.rewards0.title}"
+					type: "command"
+				}
+				{
+					id: "6B745E74A4D28166"
+					item: "mmorpg:runes/wir"
+					type: "item"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests23.subtitle}"
+			tasks: [{
+				id: "69BF72746FD778C9"
+				item: {
+					Count: 1
+					id: "mmorpg:stat_soul/family/offhand/epic"
+					tag: {
+						tier: 2
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "{cte2.act_iv_2.quests23.title}"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["63DA191A8533F1AE"]
+			description: ["{cte2.act_iv_2.quests24.description0}"]
+			id: "009742DD96FC61A3"
+			rewards: [{
+				auto: "enabled"
+				command: "/mine_and_slash give exp @p 17000"
+				elevate_perms: true
+				icon: "ftb_ph:exp"
+				id: "39733DED917F913D"
+				silent: true
+				title: "{cte2.act_iv_2.quests24.rewards0.title}"
+				type: "command"
+			}]
+			subtitle: "{cte2.act_iv_2.quests24.subtitle}"
+			tasks: [
+				{
+					id: "5A3357A5DCD1CD1E"
+					item: {
+						Count: 1
+						id: "mmorpg:buff_potion/rare_str"
+						tag: {
+							tier: 2
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "78E73D2C47C9BA3E"
+					item: {
+						Count: 1
+						id: "mmorpg:buff_potion/rare_int"
+						tag: {
+							tier: 2
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "36F332239B46A06D"
+					item: {
+						Count: 1
+						id: "mmorpg:buff_potion/rare_dex"
+						tag: {
+							tier: 2
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "{cte2.act_iv_2.quests24.title}"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44D0530C2718FC69"]
+			description: ["{cte2.act_iv_2.quests25.description0}"]
+			id: "782C1CCBB662DCE7"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 15000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "028B1281D6357725"
+					silent: true
+					title: "{cte2.act_iv_2.quests25.rewards0.title}"
+					type: "command"
+				}
+				{
+					count: 6
+					id: "3AD1C0C45DDD2CD8"
+					item: "mmorpg:stone/2"
+					type: "item"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests25.subtitle}"
+			tasks: [
+				{
+					entity: "blue_skies:diophyde_prowler"
+					icon: {
+						Count: 1
+						id: "blue_skies:diopside_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "0CDD1C891FA5EA33"
+					type: "kill"
+					value: 16L
+				}
+				{
+					entity: "blue_skies:polargeist"
+					icon: "blue_skies:polar_posy"
+					id: "274D244835E88D2E"
+					type: "kill"
+					value: 16L
+				}
+			]
+			title: "{cte2.act_iv_2.quests25.title}"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["260297A19CCA9015"]
+			description: ["{cte2.act_iv_2.quests26.description0}"]
+			id: "71D82176833A2EF7"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 15000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "26D8E855C535287F"
+					silent: true
+					title: "{cte2.act_iv_2.quests26.rewards0.title}"
+					type: "command"
+				}
+				{
+					id: "31F822D1D750BC79"
+					item: "mmorpg:stone/3"
+					type: "item"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests26.subtitle}"
+			tasks: [
+				{
+					entity: "blue_skies:nyctofly"
+					icon: "moresnifferflowers:dragonfly"
+					id: "7EBAFE7FB0C15D8F"
+					type: "kill"
+					value: 16L
+				}
+				{
+					entity: "blue_skies:venom_spider"
+					icon: "minecraft:spider_eye"
+					id: "0124C7872809C6AF"
+					type: "kill"
+					value: 16L
+				}
+			]
+			title: "{cte2.act_iv_2.quests26.title}"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["10ABAF144ABC131E"]
+			description: [
+				"{cte2.act_iv_2.quests27.description0}"
+				""
+				"{cte2.act_iv_2.quests27.description1}"
+				""
+				"{cte2.act_iv_2.quests27.description2}"
+				"{cte2.act_iv_2.quests27.description3}"
+				"{cte2.act_iv_2.quests27.description4}"
+				"{cte2.act_iv_2.quests27.description5}"
+			]
+			id: "23213497F1A2C53F"
+			rewards: [
+				{
+					id: "36633A7C89B1942B"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/common_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"rare\",\"lvl\":40,\"id\":\"gear\",\"key\":\"\"}"
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 18500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "5E1F2229132E532B"
+					silent: true
+					title: "{cte2.act_iv_2.quests27.rewards1.title}"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			subtitle: "{cte2.act_iv_2.quests27.subtitle}"
+			tasks: [{
+				entity: "born_in_chaos_v1:supreme_bonescaller_stage_2"
+				icon: {
+					Count: 1
+					id: "born_in_chaos_v1:bonescaller_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "14E57ADBB4E08A60"
+				type: "kill"
+				value: 1L
+			}]
+			title: "{cte2.act_iv_2.quests27.title}"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F455D8A504B112D"]
+			description: [
+				"{cte2.act_iv_2.quests28.description0}"
+				""
+				"{cte2.act_iv_2.quests28.description1}"
+				""
+				"{cte2.act_iv_2.quests28.description2}"
+				""
+				"{cte2.act_iv_2.quests28.description3}"
+				"{cte2.act_iv_2.quests28.description4}"
+				"{cte2.act_iv_2.quests28.description5}"
+				"{cte2.act_iv_2.quests28.description6}"
+			]
+			id: "33B47A164F25FEC1"
+			rewards: [
+				{
+					id: "69034B979C786264"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/common_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"epic\",\"lvl\":50,\"id\":\"gear\",\"key\":\"\"}"
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 25500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "014635EDDD68462F"
+					silent: true
+					title: "{cte2.act_iv_2.quests28.rewards1.title}"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			subtitle: "{cte2.act_iv_2.quests28.subtitle}"
+			tasks: [{
+				entity: "born_in_chaos_v1:nightmare_stalker"
+				icon: "born_in_chaos_v1:nightmare_stalker_skull"
+				id: "680D375F4847738D"
+				type: "kill"
+				value: 3L
+			}]
+			title: "{cte2.act_iv_2.quests28.title}"
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["63DA191A8533F1AE"]
+			description: [
+				"{cte2.act_iv_2.quests29.description0}"
+				""
+				"{cte2.act_iv_2.quests29.description1}"
+				""
+				"{cte2.act_iv_2.quests29.description2}"
+				"{cte2.act_iv_2.quests29.description3}"
+				"{cte2.act_iv_2.quests29.description4}"
+				"{cte2.act_iv_2.quests29.description5}"
+			]
+			id: "0E5C8E63E09BFE27"
+			rewards: [
+				{
+					id: "60750E663EAE5554"
+					item: {
+						Count: 1
+						id: "mmorpg:chest/common_gear"
+						tag: {
+							mmorpg_loot_chest: "{\"num\":5,\"rar\":\"epic\",\"lvl\":50,\"id\":\"gear\",\"key\":\"\"}"
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 25500"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "7B403064757F4D7B"
+					silent: true
+					title: "{cte2.act_iv_2.quests29.rewards1.title}"
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			subtitle: "{cte2.act_iv_2.quests29.subtitle}"
+			tasks: [{
+				entity: "born_in_chaos_v1:lifestealer_true_form"
+				icon: "born_in_chaos_v1:lifestealer_skull"
+				id: "4468066F4DE491A2"
+				type: "kill"
+				value: 3L
+			}]
+			title: "{cte2.act_iv_2.quests29.title}"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5F455D8A504B112D"]
+			description: ["{cte2.act_iv_2.quests30.description0}"]
+			id: "29DF148AF87B181E"
+			rewards: [
+				{
+					id: "78B0E419A6641708"
+					item: "mmorpg:material/fishing/2"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					command: "/mine_and_slash give exp @p 17000"
+					elevate_perms: true
+					icon: "ftb_ph:exp"
+					id: "07AFE04BFDA33298"
+					silent: true
+					title: "{cte2.act_iv_2.quests30.rewards1.title}"
+					type: "command"
+				}
+			]
+			subtitle: "{cte2.act_iv_2.quests30.subtitle}"
+			tasks: [{
+				id: "3D7B3FE64D6257B4"
+				item: {
+					Count: 1
+					id: "mmorpg:seafood/legendary_exp"
+					tag: {
+						tier: 2
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "{cte2.act_iv_2.quests30.title}"
+			x: 9.0d
+			y: -3.0d
+		}
+	]
+	subtitle: ["{cte2.act_iv_2.subtitle0}"]
+	title: "{cte2.act_iv_2.title}"
+}

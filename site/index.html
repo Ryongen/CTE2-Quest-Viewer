@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quest Book</title>
+<meta name="description" content="Browse the modpack's FTB Quests chapters in your browser.">
+<link rel="icon" href="assets/gui/book.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <!-- left: chapter list (like the in-game chapter panel) -->
+  <nav id="chapters" aria-label="Chapters">
+    <div class="chapters-head">
+      <img class="pack-icon pixel" alt="">
+      <span class="pack-title mc"></span>
+    </div>
+    <div id="chapter-list"></div>
+  </nav>
+
+  <!-- top bar -->
+  <header id="topbar">
+    <button id="menu-btn" class="tb-btn" title="Chapters" aria-label="Toggle chapters">&#9776;</button>
+    <div id="chapter-title">
+      <span class="t mc"></span>
+      <span class="s mc"></span>
+    </div>
+    <div id="search-wrap">
+      <input id="search" type="search" placeholder="Search quests, items, mobs…" autocomplete="off" spellcheck="false">
+      <div id="search-results" hidden></div>
+    </div>
+    <button id="fit-btn" class="tb-btn" title="Fit chapter to screen (F)" aria-label="Fit to screen">&#x2922;</button>
+    <button id="font-btn" class="tb-btn" title="Toggle pixel font" aria-label="Toggle pixel font">Aa</button>
+  </header>
+
+  <!-- quest map -->
+  <main id="viewport" tabindex="0">
+    <div id="world">
+      <div id="images"></div>
+      <svg id="lines" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div id="quests"></div>
+    </div>
+    <div id="zoom-ind" class="mc"></div>
+  </main>
+</div>
+
+<!-- quest view (opens over the map, like in-game) -->
+<div id="quest-view" class="overlay" hidden>
+  <div class="qv-panel" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+    <button class="qv-close" aria-label="Close" title="Close (Esc)"></button>
+    <div class="qv-head">
+      <div class="qv-icon"></div>
+      <h2 id="qv-title" class="mc"></h2>
+      <div class="qv-flags"></div>
+    </div>
+    <div class="qv-tr">
+      <div class="qv-col">
+        <div class="qv-label tasks mc">Tasks</div>
+        <div class="qv-slots tasks"></div>
+      </div>
+      <div class="qv-col">
+        <div class="qv-label rewards mc">Rewards</div>
+        <div class="qv-slots rewards"></div>
+      </div>
+    </div>
+    <div class="qv-body">
+      <div class="qv-subtitle mc"></div>
+      <div class="qv-desc mc"></div>
+      <div class="qv-pages"><button class="pg-prev" aria-label="Previous page">&#9664;</button><span class="pg-num mc"></span><button class="pg-next" aria-label="Next page">&#9654;</button></div>
+      <div class="qv-deps"></div>
+    </div>
+  </div>
+</div>
+
+<!-- reward table popup -->
+<div id="table-view" class="overlay" hidden>
+  <div class="tv-panel" role="dialog" aria-modal="true">
+    <button class="qv-close" aria-label="Close"></button>
+    <h3 class="mc"></h3>
+    <div class="tv-sub mc"></div>
+    <div class="tv-list"></div>
+  </div>
+</div>
+
+<div id="tooltip" class="mc" hidden></div>
+<div id="loading" class="mc">Loading quest book…</div>
+
+<script src="app.js"></script>
+</body>
+</html>
