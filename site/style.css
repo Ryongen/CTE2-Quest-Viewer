@@ -23,7 +23,7 @@
   --topbar: 44px;
   color-scheme: dark;
 }
-:root.pixel { --font-mc: "Pixelify Sans", var(--font-ui); }
+:root.pixel { --font-mc: "Tiny5", "Pixelify Sans", var(--font-ui); } /* Tiny5 is loaded with digits only: Pixelify's 2/5 read as Z/S */
 
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font: 14px/1.4 var(--font-ui); }

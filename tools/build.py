@@ -38,8 +38,9 @@ def t(s):
     if not isinstance(s, str):
         return s
     m = KEY_RE.match(s.strip())
-    if m:
-        return lang.get(m.group(1), s)
+    if m and m.group(1) in lang:
+        # lang values are Java format strings in-game, so '%%' shows as '%'
+        return lang[m.group(1)].replace('%%', '%')
     return s
 
 
