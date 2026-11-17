@@ -198,7 +198,7 @@ def _affine_from_points(src, dst):
     return (a, b, c, d, e, f)
 
 
-def render_block(assets, textures, elements):
+def render_block(assets, textures, elements, keep_order=False):
     """Tiny isometric renderer: draws the up/south/east faces of each element."""
     if not elements:
         elements = [{'from': [0, 0, 0], 'to': [16, 16, 16], 'faces': {
@@ -219,7 +219,7 @@ def render_block(assets, textures, elements):
 
     out = Image.new('RGBA', (ISO_SIZE, ISO_SIZE))
     cache = {}
-    order = sorted(elements, key=lambda e: (e['from'][1] + e['to'][1], e['from'][0] + e['from'][2]))
+    order = elements if keep_order else sorted(elements, key=lambda e: (e['from'][1] + e['to'][1], e['from'][0] + e['from'][2]))
     drew = False
     for el in order:
         (x0, y0, z0), (x1, y1, z1) = el.get('from', [0, 0, 0]), el.get('to', [16, 16, 16])
@@ -275,6 +275,70 @@ def render_block(assets, textures, elements):
     return out if drew else None
 
 
+# Mob heads and boss trophies are drawn by code in-game (builtin/entity); their item
+# model only names soul sand as the break-particle texture. Build them as a cube cut
+# from the mob texture instead. Values are texture pixels:
+#   box: (u, v, w, h, d) in the usual entity cube layout, hat: (u, v) of the outer layer
+#   faces: explicit (x0, y0, x1, y1) rects for models that don't fit that layout
+#   parts: extra boxes on the front face, ((u, v, w, h, d), (x, y) offset from the face's top-left)
+_SKULL = {'tex': 'minecraft:entity/skeleton/skeleton', 'box': (0, 0, 8, 8, 8)}
+HEADS = {
+    'minecraft:skeleton_skull': _SKULL,
+    'minecraft:wither_skeleton_skull': {'tex': 'minecraft:entity/skeleton/wither_skeleton', 'box': (0, 0, 8, 8, 8)},
+    'minecraft:zombie_head': {'tex': 'minecraft:entity/zombie/zombie', 'box': (0, 0, 8, 8, 8), 'hat': (32, 0)},
+    'minecraft:player_head': {'tex': 'minecraft:entity/player/wide/steve', 'box': (0, 0, 8, 8, 8), 'hat': (32, 0)},
+    'minecraft:creeper_head': {'tex': 'minecraft:entity/creeper/creeper', 'box': (0, 0, 8, 8, 8)},
+    'minecraft:piglin_head': {'tex': 'minecraft:entity/piglin/piglin', 'box': (0, 0, 10, 8, 8),
+                             'parts': [((31, 1, 4, 4, 1), (3, 4))]},  # snout
+    'minecraft:dragon_head': {'tex': 'minecraft:entity/enderdragon/dragon', 'box': (112, 30, 16, 16, 16)},
+    'mutantmonsters:mutant_skeleton_skull': {'tex': 'mutantmonsters:entity/mutant_skeleton', 'box': (0, 0, 8, 8, 8)},
+    'twilightforest:skeleton_skull_candle': _SKULL,
+    'twilightforest:naga_trophy': {'tex': 'twilightforest:model/nagahead', 'box': (0, 0, 16, 16, 16)},
+    'twilightforest:lich_trophy': {'tex': 'twilightforest:model/twilightlich64', 'box': (0, 0, 8, 8, 8), 'hat': (32, 0)},
+    'twilightforest:snow_queen_trophy': {'tex': 'twilightforest:model/snowqueen', 'box': (0, 0, 8, 8, 8)},
+    'twilightforest:knight_phantom_trophy': {'tex': 'twilightforest:armor/phantom_1', 'box': (0, 0, 8, 8, 8), 'hat': (32, 0)},
+    'twilightforest:minoshroom_trophy': {'tex': 'twilightforest:model/minoshroomtaur', 'box': (96, 16, 8, 8, 8)},
+    'twilightforest:ur_ghast_trophy': {'tex': 'twilightforest:model/towerghast_fire', 'box': (0, 0, 16, 16, 16)},
+    'twilightforest:hydra_trophy': {'tex': 'twilightforest:model/hydra4', 'size': (32, 16, 32), 'faces': {
+        'up': (304, 0, 336, 32), 'south': (304, 32, 336, 48), 'east': (336, 32, 368, 48)}},
+    'twilightforest:alpha_yeti_trophy': {'tex': 'twilightforest:model/yetialpha', 'size': (48, 48, 32), 'faces': {
+        'up': (112, 0, 160, 32), 'south': (112, 32, 160, 80), 'east': (160, 32, 192, 80)}},
+}
+
+
+def render_head(assets, spec):
+    tex = load_texture(assets, spec['tex'])
+    if tex is None:
+        return None
+    k = 16.0 / tex.size[0]  # render_block's uv unit is 1/16 of the texture width
+
+    def face_rects(u, v, w, h, d):
+        return {'up': (u + d, v, u + d + w, v + d), 'south': (u + d, v + d, u + d + w, v + d + h),
+                'east': (u + d + w, v + d, u + d + w + d, v + d + h)}
+
+    if 'box' in spec:
+        u, v, w, h, d = spec['box']
+        layers = [face_rects(u, v, w, h, d)]
+        if spec.get('hat'):
+            layers.append(face_rects(*spec['hat'], w, h, d))
+    else:
+        (w, h, d), layers = spec['size'], [spec['faces']]
+    s = 14.0 / max(w, h, d)
+    elements = []
+    for i, rects in enumerate(layers):
+        g = 0.6 * i  # outer layer sits slightly outside the head
+        lo = [8 - w * s / 2 - g, 8 - h * s / 2 - g, 8 - d * s / 2 - g]
+        hi = [8 + w * s / 2 + g, 8 + h * s / 2 + g, 8 + d * s / 2 + g]
+        elements.append({'from': lo, 'to': hi, 'faces': {
+            n: {'texture': '#t', 'uv': [c * k for c in r]} for n, r in rects.items()}})
+    x0, y1, z1 = 8 - w * s / 2, 8 + h * s / 2, 8 + d * s / 2
+    for (u, v, pw, ph, pd), (ox, oy) in spec.get('parts', []):
+        elements.append({'from': [x0 + ox * s, y1 - (oy + ph) * s, z1], 'to': [x0 + (ox + pw) * s, y1 - oy * s, z1 + pd * s],
+                         'faces': {n: {'texture': '#t', 'uv': [c * k for c in r]}
+                                   for n, r in face_rects(u, v, pw, ph, pd).items()}})
+    return render_block(assets, {'t': spec['tex']}, elements, keep_order=True)
+
+
 def guess_texture(assets, ns, p):
     """Last resort for items drawn by code (chests, backpacks...): find a texture named after the item."""
     base = p.split('/')[-1]
@@ -296,7 +360,8 @@ def guess_texture(assets, ns, p):
 
 
 def render_item(assets, item_id):
-    im = _render_item(assets, item_id)
+    im = render_head(assets, HEADS[item_id]) if item_id in HEADS else None
+    im = im or _render_item(assets, item_id)
     if im is None:
         im = guess_texture(assets, *rl(item_id))
     return im
